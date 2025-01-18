@@ -5,18 +5,43 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>JQuery for Abssolute Beginners from Basic to Advance</title>
     <script src="jquery-3.7.1.min.js" type="text/javascript"></script>
+    <style>
+        #textBox{
+            width: 200px;
+            height: 200px;
+            background-color: #ccc;
+            position: absolute;
+            margin-top: 20px;
+        }
+    </style>
 </head>
 <body>
     
     <script>
         $(document).ready(function () {
-         $('#toggleMe').click(function () {
-            $('#textBox').toggle(4000, 'swing');
-         });
+        $('#grow').click(function () {
+            $("#textBox").animate({width:"500px"},1000);
+        });
+        
+        $('#move').click(function () {
+            $('#textBox').animate({marginLeft:'200px'}, 1000)
+        })
+
+        $('#bigger').click(function () {
+            $('#textBox').animate({fontSize:'40px'}, 3000)
+        })
+
+        $('#many').click(function () {
+            $('#textBox').animate({fontSize:'40px', marginLeft:"400px", width:"600px"}, 2000)
+        })
+
         });
     </script>
 
-    <a href="#" id="toggleMe">Toggle Me</a>
+    <a href="#" id="grow">Grow</a>
+    <a href="#" id="move">Move</a>
+    <a href="#" id="bigger">Bigger</a>
+    <a href="#" id="many">Many Things</a>
 
     <div id="textBox">
         <p>learn with me</p>
