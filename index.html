@@ -8,15 +8,19 @@
 </head>
 <body>
     
-    <h1>JQuery for Abssolute Beginners</h1>
-    <h1>JQuery for Abssolute Beginners</h1>
-    <h1>JQuery for Abssolute Beginners</h1>
-    
     <script>
         $(document).ready(function(){
-            $("h1:last").css('color', 'red');
+            var newText = $('<p>');
+            newText.append("<h1> just replaced the text</h1>");
+            $('#textbox').html(newText);
         });
     </script>
+
+    <div id="textbox">
+        Learn jquery with kashan moin
+    </div>
+    
+
 
 </body>
 </html>

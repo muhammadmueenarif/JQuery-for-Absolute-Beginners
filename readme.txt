@@ -12,3 +12,18 @@ customization.
 download from jquery.com. 
 
 first program. 
+
+basics concepts
+selector and filters. 
+replacing contents
+handling events
+hover effects. hide show
+fading
+slide
+toggle 
+animate
+selectors
+filters
+
+
+Advanced Topics
