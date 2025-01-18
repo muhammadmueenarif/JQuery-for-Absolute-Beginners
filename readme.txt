@@ -22,7 +22,7 @@ fading
 slide
 toggle 
 animate
-selectors
+selectors (access tag with tag name, class with . and id with #)
 filters
 
 
