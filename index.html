@@ -7,9 +7,7 @@
     <script src="jquery-3.7.1.min.js" type="text/javascript"></script>
 
     <style>
-      #textbox {
-        display: none;
-      }
+     
     </style>
 
 </head>
@@ -17,23 +15,27 @@
     
     <script>
         $(document).ready(function () {
-          $('#fade-in').on('click', function () {
-            $('#textbox').fadeIn(3000, function () {
-                alert('i am done');
-            });
-          });
-          $('#fade-out').on('click', function () {
-            $('#textbox').fadeOut(3000, function () {
-                alert('i"m done')
+         $('#slide-up').click(function () {
+            $('#textBox').slideUp("2000", "linear");
+         })
+
+         $('#slide-down').click(function () {
+            $('#textBox').slideDown("2000", "linear");
+         })
+
+         $('#toggleSlide').click(function () {
+            $("#textBox").slideToggle("2000", function () {
+                alert("done");
             })
-          })  
+         });
+
         })
     </script>
 
-    <a href="#" id="fade-in">Fade in</a> ! <a href="#" id="fade-out">Fade out</a>
+    <a href="#" id="slide-up">slide up</a> ! <a href="#" id="slide-down">slide down</a>
+    <a href="#" id="toggleSlide">Toggle slide</a>
 
-
-    <div id="textbox">
+    <div id="textBox">
         <p>learn with me</p>
         <p>let's learn JQuery</p>
     </div>
