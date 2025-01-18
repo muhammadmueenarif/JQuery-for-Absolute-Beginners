@@ -19,31 +19,14 @@
     
     <script>
         $(document).ready(function () {
-        $('#grow').click(function () {
-            $("#textBox").animate({width:"500px"},1000);
-        });
-        
-        $('#move').click(function () {
-            $('#textBox').animate({marginLeft:'200px'}, 1000)
-        })
-
-        $('#bigger').click(function () {
-            $('#textBox').animate({fontSize:'40px'}, 3000)
-        })
-
-        $('#many').click(function () {
-            $('#textBox').animate({fontSize:'40px', marginLeft:"400px", width:"600px"}, 2000)
-        })
-
+            $('#container p:even').css('border', '2px solid green');
+            $('#container p:last').css('border', '2px solid red');
         });
     </script>
 
-    <a href="#" id="grow">Grow</a>
-    <a href="#" id="move">Move</a>
-    <a href="#" id="bigger">Bigger</a>
-    <a href="#" id="many">Many Things</a>
-
-    <div id="textBox">
+    <div id="container">
+        <p>Hy there</p>
+        <p>How are you</p>
         <p>learn with me</p>
         <p>let's learn JQuery</p>
     </div>
