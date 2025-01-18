@@ -10,3 +10,5 @@ it is js library. simplify javascript. it works on cross browser platforms. we c
 customization. 
 
 download from jquery.com. 
+
+first program. 
