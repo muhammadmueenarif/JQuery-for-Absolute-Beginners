@@ -5,27 +5,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>JQuery for Abssolute Beginners from Basic to Advance</title>
     <script src="jquery-3.7.1.min.js" type="text/javascript"></script>
+    <style>
+        .colorBox{ 
+            color: #00D8EE;
+        }
+    </style>
 </head>
 <body>
     
     <script>
        $(document).ready(function () {
-    
-        //append means it will add that thing or value after the element and prepend means it will add that 
-        //value before that text
-
-        $("#append").click(function () {
-            $("p:first").append("i just appended some copy!");
-        })
-
-        $("#prepend").click(function () {
-            $("p:first").prepend("i just prepend some copy!");
-        })
-
+        // $("#container p:first").wrap("<div class='colorBox'></div>"). //it will wrap first p in div
+        // $("#container p:last").empty(); //it will remove last.
+        // $("<div>Container</div>").replaceAll("#container"); //it will replace the div of container with new. 
+        $("#container").replaceWith("<div>This div has been replaced</div>") //this will replace container with new div only.
     })
     </script>
-    <a href="#" id="append">append</a>
-    <a href="#" id="prepend">prepend</a>
 
    <div id="container">
     <p>1. Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus nemo, magnam assumenda nobis fuga consequuntur ab doloribus, at ex numquam sint eum qui quas optio porro tempore. Ex, nemo porro!</p>
