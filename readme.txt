@@ -27,3 +27,8 @@ filters
 
 
 Advanced Topics
+Advanced selectors 
+creating content 
+inserting content 
+modifying content
+modifying css
