@@ -10,16 +10,22 @@
     
     <script>
        $(document).ready(function () {
-        $("#create_variable").click(function () {
-            var newText = $('#container p:first');
-            $("#container p:last").html(newText);
+    
+        //append means it will add that thing or value after the element and prepend means it will add that 
+        //value before that text
+
+        $("#append").click(function () {
+            $("p:first").append("i just appended some copy!");
         })
+
+        $("#prepend").click(function () {
+            $("p:first").prepend("i just prepend some copy!");
+        })
+
     })
     </script>
-
-   <a href="#" id="create">Create</a>
-   <a href="#" id="create_text">create text</a>
-   <a href="#" id="create_variable">create variable</a>
+    <a href="#" id="append">append</a>
+    <a href="#" id="prepend">prepend</a>
 
    <div id="container">
     <p>1. Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus nemo, magnam assumenda nobis fuga consequuntur ab doloribus, at ex numquam sint eum qui quas optio porro tempore. Ex, nemo porro!</p>
