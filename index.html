@@ -10,9 +10,9 @@
     
     <script>
        $(document).ready(function () {
-        $("#create_text").click(function () {
-            // var newText = $('#container p:first');
-            $("#container p:last").text("<p>replaced and created this text</p>");
+        $("#create_variable").click(function () {
+            var newText = $('#container p:first');
+            $("#container p:last").html(newText);
         })
     })
     </script>
@@ -22,9 +22,9 @@
    <a href="#" id="create_variable">create variable</a>
 
    <div id="container">
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus nemo, magnam assumenda nobis fuga consequuntur ab doloribus, at ex numquam sint eum qui quas optio porro tempore. Ex, nemo porro!</p>
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae quam obcaecati delectus, fugit molestiae ex quisquam eius exercitationem tempore, ratione hic maiores incidunt asperiores libero voluptates quidem minus. Exercitationem, fugit.</p>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores quaerat officia unde sed molestiae ratione ab nesciunt, consequuntur quidem deserunt, beatae sint ipsa! Totam error magnam laboriosam doloribus omnis dolorem?</p>
+    <p>1. Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus nemo, magnam assumenda nobis fuga consequuntur ab doloribus, at ex numquam sint eum qui quas optio porro tempore. Ex, nemo porro!</p>
+    <p>2. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae quam obcaecati delectus, fugit molestiae ex quisquam eius exercitationem tempore, ratione hic maiores incidunt asperiores libero voluptates quidem minus. Exercitationem, fugit.</p>
+    <p>3. Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores quaerat officia unde sed molestiae ratione ab nesciunt, consequuntur quidem deserunt, beatae sint ipsa! Totam error magnam laboriosam doloribus omnis dolorem?</p>
    </div>
 
 </body>
